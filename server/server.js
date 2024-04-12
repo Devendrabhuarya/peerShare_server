@@ -8,12 +8,12 @@ const VOICE_ACTION = require('./voiceAction');
 const server = require('http').createServer(app);
 const io = require('socket.io')(server, {
     cors: {
-        origin: 'http://localhost:3000',
+        origin: 'https://peer-share-client-jzrp8wmy0-devendrabhuaryas-projects.vercel.app',
         methods: ['GET', 'POST']
     }
 });
 var corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://peer-share-client-jzrp8wmy0-devendrabhuaryas-projects.vercel.app',
     methods: ['GET', 'POST']
 }
 app.use(cors(corsOptions));
